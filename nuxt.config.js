@@ -25,16 +25,16 @@ export default {
     cssPath: '~/assets/css/vendors/tailwind.scss',
   },
   // 切換 router 時,觸發設定
-  // router: {
-  //   mode: 'history',
-  //   routes: [
-  //     {
-  //       path: '*',
-  //       component: '~/layouts/error.vue',
-  //     },
-  //   ],
-  //   middleware: [],
-  // },
+  router: {
+    mode: 'history',
+    routes: [
+      {
+        path: '*',
+        component: '~/layouts/error.vue',
+      },
+    ],
+    middleware: [],
+  },
   build: {
     extend(config, ctx) {
       // Run ESLint on save
