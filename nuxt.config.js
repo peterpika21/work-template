@@ -17,6 +17,7 @@ export default {
       lang: 'scss',
     },
   ],
+  // 預設是 SSR + CSR 環境都起作用，若你只需要 Browser 端執行，把 ssr 註記關掉
   plugins: [],
   components: true,
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
@@ -26,6 +27,9 @@ export default {
   },
   // 切換 router 時,觸發設定
   router: {
+    // 配合 github deploy 用 /nuxt/ 記得改成專案資料夾名稱才能 deploy
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt/' : '',
+
     mode: 'history',
     routes: [
       {
