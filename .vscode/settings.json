@@ -1,7 +1,7 @@
 {
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.formatOnSave": false, // 存檔時不進行 vscode 自動排版 (避免產生衝突)
+  "editor.formatOnSave": true,
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

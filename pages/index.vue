@@ -11,7 +11,7 @@ import { defineComponent, reactive } from '@vue/composition-api'
 export default defineComponent({
   setup() {
     const state = reactive({
-      demo: 123
+      demo: 123,
     })
 
     return state
