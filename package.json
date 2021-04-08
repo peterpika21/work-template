@@ -20,6 +20,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.5",
+    "@vue/composition-api": "^1.0.0-rc.6",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"
   },

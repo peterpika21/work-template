@@ -18,6 +18,6 @@ module.exports = {
     'no-unreachable': 'off',
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
-    'prettier/prettier': ['error', { semi: false, endOfLine: 'auto' }],
+    'prettier/prettier': ['error', { semi: false, endOfLine: 'auto', parser: 'flow' }],
   },
 }

@@ -18,7 +18,7 @@ export default {
     },
   ],
   // 預設是 SSR + CSR 環境都起作用，若你只需要 Browser 端執行，把 ssr 註記關掉
-  plugins: ['~/plugins/fontAwesomeIcon.ts'],
+  plugins: ['~/plugins/fontAwesomeIcon.ts', '~/plugins/vueCompositionAPI.ts'],
   components: true,
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
   modules: ['@nuxtjs/axios'],
